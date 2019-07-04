@@ -1,6 +1,6 @@
-package weather;
+package simulate.weather;
 
-import simulate.vehicles.Coordinates;
+import weather.Coordinates;
 
 public class WeatherProvider {
     private static WeatherProvider weatherProvider = new WeatherProvider();

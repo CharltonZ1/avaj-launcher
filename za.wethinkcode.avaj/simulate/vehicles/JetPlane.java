@@ -1,8 +1,6 @@
 package simulate.vehicles;
 
-import vehicles.Flyable;
-import vehicles.WeatherTower;
-import weather.Coordinates;
+import vehicles.*;
 
 public class JetPlane extends Aircraft implements Flyable {
     private WeatherTower    weatherTower;
