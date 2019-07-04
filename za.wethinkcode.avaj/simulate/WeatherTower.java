@@ -1,3 +1,5 @@
+package simulate;
+
 import simulate.vehicles.Coordinates;
 
 public class WeatherTower extends Tower {
