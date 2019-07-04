@@ -2,7 +2,8 @@ package simulate.weather;
 
 import java.util.ArrayList;
 import java.util.List;
-import simulate.vehicles.Flyable;
+import za.wethinkcode.avaj.*;
+import simulate.weather.*;
 
 public class Tower {
     private List<Flyable> observers = new ArrayList<Flyable>();
@@ -20,6 +21,8 @@ public class Tower {
     }
 
     protected void conditionsChanged() {
-
+        for (Flyable flyable : observers) {
+            flyable.updateConditions();
+        }
     }
 }
