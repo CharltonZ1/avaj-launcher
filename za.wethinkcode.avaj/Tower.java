@@ -1,9 +1,8 @@
-package simulate.weather;
+package za.wethinkcode.avaj;
 
+import za.wethinkcode.avaj.*;
 import java.util.ArrayList;
 import java.util.List;
-import za.wethinkcode.avaj.*;
-import simulate.weather.*;
 
 public class Tower {
     private List<Flyable> observers = new ArrayList<Flyable>();

@@ -1,7 +1,6 @@
-package simulate.weather;
+package za.wethinkcode.avaj;
 
-import simulate.*;
-import simulate.weather.*;
+import za.wethinkcode.avaj.*;
 
 public class WeatherProvider {
     private static WeatherProvider weatherProvider = new WeatherProvider();

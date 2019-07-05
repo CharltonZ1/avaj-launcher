@@ -1,4 +1,4 @@
-package za.wethinkcode.avaj.simulate;
+package za.wethinkcode.avaj;
 
 public class Coordinates {
     private int longitude;

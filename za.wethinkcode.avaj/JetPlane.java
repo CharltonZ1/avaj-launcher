@@ -1,7 +1,6 @@
-package za.wethinkcode.avaj.simulate;
+package za.wethinkcode.avaj;
 
-import simulate.*;
-import simulate.weather.*;
+import za.wethinkcode.avaj.*;
 
 public class JetPlane extends Aircraft implements Flyable {
     private WeatherTower weatherTower;

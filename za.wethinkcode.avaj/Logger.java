@@ -1,5 +1,6 @@
-package za.wethinkcode.avaj.simulate;
+package za.wethinkcode.avaj;
 
+import za.wethinkcode.avaj.*;
 import  java.io.*;
 
 public class    Logger {

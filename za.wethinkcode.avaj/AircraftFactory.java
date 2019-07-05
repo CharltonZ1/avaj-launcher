@@ -1,7 +1,6 @@
-package za.wethinkcode.avaj.simulate;
+package za.wethinkcode.avaj;
 
-import simulate.*;
-import simulate.weather.*;
+import za.wethinkcode.avaj.*;
 
 public class AircraftFactory {
     public static Flyable newAircraft(String type, String name, int longitude, int latitude, int height) {
