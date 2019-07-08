@@ -1,5 +1,7 @@
 package avaj;
 
+import	avaj.*;
+
 public class WeatherProvider {
 	private static WeatherProvider weatherProvider = new WeatherProvider();
 	private static String[] weather = { "SUN", "RAIN", "FOG", "SNOW" };

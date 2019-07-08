@@ -1,5 +1,6 @@
 package avaj;
 
+import	avaj.*;
 import java.util.*;
 
 public class Tower {
@@ -13,6 +14,7 @@ public class Tower {
 	}
 
 	public void unregister(Flyable flyable) {
+		observers.remove(flyable);
 	}
 
 	protected void conditionsChanged() {

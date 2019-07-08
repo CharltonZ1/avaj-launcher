@@ -1,5 +1,7 @@
 package avaj;
 
+import	avaj.*;
+
 public class Helicopter extends Aircraft implements Flyable {
 	private WeatherTower weatherTower = new WeatherTower();
 
@@ -37,11 +39,11 @@ public class Helicopter extends Aircraft implements Flyable {
 			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id + ") landing.");
 			Logger.getLogger().logToFile(
 					"Tower  says: Helicopter#" + this.name + "(" + this.id + ")" + " unregistered from weather tower.");
+			weatherTower.unregister(this);
 		}
 	}
 
 	public void registerTower(WeatherTower weatherTower) {
-		weatherTower = new WeatherTower();
 		Logger.getLogger().logToFile(
 				"Tower says: Helicopter#" + this.name + "(" + this.id + ")" + " registered to weather tower.");
 		weatherTower.register(this);
