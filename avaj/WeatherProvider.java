@@ -1,6 +1,7 @@
 package avaj;
 
 import avaj.*;
+import java.util.Random;
 
 public class WeatherProvider {
 	private static WeatherProvider weatherProvider = new WeatherProvider();
@@ -14,10 +15,9 @@ public class WeatherProvider {
 	}
 
 	public String getCurrentWeather(Coordinates coordinates) {
-		int longitude = coordinates.getLongitude();
-		int latitude = coordinates.getLatitude();
-		int height = coordinates.getHeight();
-		int rand_int = (longitude + latitude + height) % 4;
+		Random rand = new Random();
+		int rand_int = 0;
+		rand_int = rand.nextInt(4);
 		return (weather[rand_int]);
 	}
 }
