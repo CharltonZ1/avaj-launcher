@@ -6,5 +6,5 @@
 | --- | --- |
 | Java | Rigor |
 | UML | Adaptation & creativity |
-| Object-Oriented Programming |
-| Imperative Programming |
+| Object-Oriented Programming | Object-Oriented Programming |
+| Imperative Programming | Imperative Programming |
