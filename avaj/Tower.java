@@ -1,6 +1,6 @@
 package avaj;
 
-import	avaj.*;
+import avaj.*;
 import java.util.*;
 
 public class Tower {

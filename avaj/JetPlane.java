@@ -1,6 +1,6 @@
 package avaj;
 
-import	avaj.*;
+import avaj.*;
 
 public class JetPlane extends Aircraft implements Flyable {
 	private WeatherTower weatherTower = new WeatherTower();
@@ -15,20 +15,22 @@ public class JetPlane extends Aircraft implements Flyable {
 		case "SUN":
 			this.coordinates.setLatitude(this.coordinates.getLatitude() + 10);
 			this.coordinates.setHeight(this.coordinates.getHeight() + 2);
-			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id + "): This is hot");
+			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id + "): SUN");
+			if (this.coordinates.getHeight() > 100) {
+				this.coordinates.setHeight(100);
+			}
 			break;
 		case "RAIN":
 			this.coordinates.setLatitude(this.coordinates.getLatitude() + 5);
-			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id
-					+ "): I should have checked the weather this morning. Curse you rain!!");
+			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id + "): RAIN");
 			break;
 		case "FOG":
 			this.coordinates.setLatitude(this.coordinates.getLatitude() + 1);
-			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id + "): This fog is too thick.");
+			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id + "): FOG.");
 			break;
 		case "SNOW":
 			this.coordinates.setHeight(this.coordinates.getHeight() - 12);
-			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id + "): Snow! Winter is coming!!!");
+			Logger.getLogger().logToFile("JetPlane#" + this.name + "(" + this.id + "): SNOW");
 			break;
 		default:
 			Logger.getLogger()

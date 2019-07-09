@@ -1,6 +1,6 @@
 package avaj;
 
-import	avaj.*;
+import avaj.*;
 
 public class WeatherProvider {
 	private static WeatherProvider weatherProvider = new WeatherProvider();

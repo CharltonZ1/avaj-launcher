@@ -1,13 +1,14 @@
 package avaj;
 
-import	avaj.*;
+import avaj.*;
 import java.io.*;
 import java.lang.*;
 import java.util.*;
 
-public	class	Simulator {
+public class Simulator {
 	private static WeatherTower weatherTower;
 	private static List<Flyable> flyables = new ArrayList<Flyable>();
+
 	public static void main(String args[]) throws InterruptedException {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(args[0]));
@@ -21,8 +22,8 @@ public	class	Simulator {
 				}
 				while ((line = reader.readLine()) != null) {
 					Flyable flyable = AircraftFactory.newAircraft(line.split(" ")[0], line.split(" ")[1],
-						Integer.parseInt(line.split(" ")[2]), Integer.parseInt(line.split(" ")[3]),
-						Integer.parseInt(line.split(" ")[4]));
+							Integer.parseInt(line.split(" ")[2]), Integer.parseInt(line.split(" ")[3]),
+							Integer.parseInt(line.split(" ")[4]));
 					if (flyable != null)
 						flyables.add(flyable);
 				}

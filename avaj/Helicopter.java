@@ -15,20 +15,23 @@ public class Helicopter extends Aircraft implements Flyable {
 		case "SUN":
 			this.coordinates.setLongitude(this.coordinates.getLongitude() + 10);
 			this.coordinates.setHeight(this.coordinates.getHeight() + 2);
-			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id + "): This is hot");
+			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id + "): SUN");
+			if (this.coordinates.getHeight() > 100) {
+				this.coordinates.setHeight(100);
+			}
 			break;
 		case "RAIN":
 			this.coordinates.setLongitude(this.coordinates.getLongitude() + 5);
 			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id
-					+ "): I should have checked the weather this morning. Curse you rain!!");
+					+ "): RAIN");
 			break;
 		case "FOG":
 			this.coordinates.setLongitude(this.coordinates.getLongitude() + 1);
-			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id + "): This fog is too thick.");
+			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id + "): FOG");
 			break;
 		case "SNOW":
 			this.coordinates.setHeight(this.coordinates.getHeight() - 12);
-			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id + "): Snow! Winter is coming!!!");
+			Logger.getLogger().logToFile("Helicopter#" + this.name + "(" + this.id + "): SNOW");
 			break;
 		default:
 			Logger.getLogger()
